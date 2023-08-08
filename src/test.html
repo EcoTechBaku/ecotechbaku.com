@@ -1,0 +1,1072 @@
+HTML
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTech</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" type="text/css" href="file:///C:/Users/ziyad/Desktop/ecotech/css/style.css">
+    <!-- Box icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<style>
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;1,300&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Variables */
+:root{
+  --main-color: #476930;
+  --second-color: #86B049;
+  --text-color: #234f1e; /*tacos*/
+  --bg-color:  #eff8dd;
+  /*Box Shadow*/
+  --box-shadow: 2px 2px 18px rgba(14, 52, 54 / 15%);
+}
+
+img{
+  width: 100%;
+}
+
+body{
+  color: var(--text-color);
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+section{
+  padding: 4.5rem 0 3rem;
+}
+
+.container{
+  max-width: 1068px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+ padding-left: 5px;
+}
+
+img2{
+  margin-left: 5px ;
+  margin-right: 5px;
+}
+
+.nav-container{
+  max-width: 1068px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 35px;
+}
+
+header{
+  display: block;
+  width: 100%;
+  background: var(--bg-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 90;
+}
+
+.logo{
+  display: flex ;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--text-color);
+  text-transform: uppercase;
+}
+
+
+
+
+.logo .bx{
+  font-size: 24px;
+  color: var(--main-color);
+}
+
+.navbar{
+  display: flex;
+}
+
+.navbar a{
+  padding: 8px 17px;
+  color: var(--text-color);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.navbar a:hover{
+  color: var(--main-color);
+}
+
+#menu-icon{
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+#menu{
+  display: none;
+}
+
+.btn{
+  padding: 20px 35px;
+  background: var(--main-color);
+  color: var(--bg-color);
+  border-radius: 10rem;
+}
+
+
+.btn:hover{
+  background: var(--bg-color);
+  color: var(--main-color);
+}
+
+.home{
+  margin-top: 5rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("https://thelandmarkbaku.az/uploads/images/Pages/Conferences&Banqueting/Rotunda/rotunda-box-new.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  max-width:inherit;
+
+}
+
+
+.home-text{
+  text-align: center;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.home-text h1{
+  color: var(--bg-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+
+
+.about{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, auto));
+  gap: 2rem;
+}
+
+.about-img img{
+  border-radius: 3rem 0 3rem 3rem;
+}
+
+.about-text span{
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--main-color);
+}
+
+.about-text h2{
+  font-size: 1.7rem;
+}
+
+.about-text p{
+  font-size: 0.938rem;
+  margin: 1rem 0 1rem;
+}
+
+.career{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+  gap: 2.4rem;
+
+}
+
+.career .box{
+  padding: 20px;
+  background: var(--bg-color);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  border-radius: 2rem;
+
+
+}
+
+.career .box:hover{
+  background: var(--main-color);
+  color: var(--bg-color);
+  transition: 1s all linear;
+}
+
+.career .box:hover{
+  background: var(--main-color);
+  color: var(--bg-color);
+  transition: 1s all linear;
+}
+
+.career  .box:responsive{
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  top-margin: 40px;
+}
+
+.career .box .bx{
+  padding: 10px;
+  border-radius: 50%;
+  background: #f6f6fe;
+  color: var(--main-color);
+  font-size: 20px;
+}
+
+.career .box h3{
+  font-size: 1.1rem;
+  margin: 1rem 0 0.4rem;
+}
+
+.career .box p{
+  font-size: 00.938rem;
+}
+
+/* Properties */
+
+.heading{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heading span{
+  font-weight: 500;
+  color: var(--main-color);
+}
+
+.heading h2{
+  font-size: 1.7rem;
+}
+
+.heading p{
+  font-size: 0.938rem;
+}
+
+.properties{
+  background: #ffffff;
+  border-radius: 2rem;
+}
+
+.properties-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+  gap: 3rem;
+  padding: 0 50px;
+}
+
+.properties-container .box{
+  background: var(--bg-color);
+  padding: 10px;
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+}
+
+.properties-container .box:hover{
+  transform: translateY(-25px);
+  transition: 0.5s;
+}
+
+.properties-container .box img{
+  border-radius: 1rem;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+  text-align: center;
+}
+
+.properties-container .box h3{
+  font-size: 1rem;
+  font-weight: 600;
+  float: right;
+}
+
+.properties-container .box .content{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.properties-container .box .content .text h3{
+  font-weight: 700;
+}
+
+.properties-container .box .content .text p{
+  font-size: 0.8rem;
+}
+
+.properties-container .box .content .icon{
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.properties-container .box .content .icon .bx{
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.properties-container .box .content .icon span{
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+.row{
+  width: 80%;
+  max-width: 3070px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px 30px;
+}
+
+.row .left{
+  overflow: hidden;
+}
+
+.row .left img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.row .right{
+  display: flex;
+  align-items: center;
+}
+
+.row .right .content{
+  padding-left: 20px;
+}
+
+.row .right .content p{
+  font-size: 16px;
+  line-height: 26px;
+  padding-bottom: 15px;
+}
+
+.newsletter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.newsletter h2{
+  font-size: 1.7rem;
+}
+
+.newsletter form{
+  background: var(--bg-color);
+  box-shadow: var(--box-shadow);
+  border: 1px solid black;
+  padding: 6px 10px;
+  border-radius: 5rem;
+}
+
+.newsletter form input{
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.newsletter #email-box{
+  width: 280px;
+}
+
+.newsletter .btn{
+  padding: 12px 34px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.footer{
+  background: var(--main-color);
+  color: var(--bg-color);
+  border-radius: 5rem 0 0 0;
+}
+
+.footer-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+  gap: 2rem;
+}
+
+.footer-container h2{
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.footer-box{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-box h3{
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.footer-box a{
+  font-size: 0.8rem;
+  color: var(--bg-color);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.footer-box a:hover{
+  color: var(--text-color);
+}
+
+.social a{
+  font-size: 20px;
+  margin-right: 1rem;
+}
+
+.social a:hover{
+  color: var(--second-color);
+}
+
+.copyright{
+  padding: 20px;
+  text-align: center;
+  color: var(--bg-color);
+  background: var(--main-color);
+}
+
+/* Making Responsive */
+@media(max-width: 1080px){
+  .container{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+/*I'm here*/
+@media (max-width:991px){
+  .row .right .content{
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 880px){
+  section{
+    padding: 4rem 0 3rem;
+  }
+
+  .properties-container{
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 1rem;
+    padding: 0 10px;
+  }
+
+  .footer-container{
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px){
+  .nav{
+    padding: 10px 0;
+  }
+
+  #menu-icon{
+    display: initial;
+  }
+
+  .navbar{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--main-color);
+    text-align: center;
+    clip-path: circle(0% at 100% 1%);
+    transition: 0.6s;
+  }
+
+  .navbar a{
+    display: block;
+    margin: 1rem;
+    padding: 20px;
+    color: var(--bg-color);
+  }
+
+  .navbar a:hover{
+    background: var(--main-color);
+    color: var(--bg-color);
+    transition: 0.2s ease;
+  }
+
+  #menu:checked ~ .navbar{
+    clip-path: circle(144% at 100% 1%);
+  }
+
+  .about-text span{
+    font-size: 0.9rem;
+  }
+
+  .about-text h2,
+  .heading h2,
+  .newsletter h2{
+    font-size: 1.4rem;
+  }
+
+  .row{
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 638px){
+  .about-text{
+    text-align: center;
+  }
+
+  .about-img{
+    order: 2;
+  }
+}
+
+@media (max-width: 440px){
+  .home-text{
+    padding-right: 14px;
+  }
+
+  .home-text h1{
+    font-size: 2.7rem;
+    position: absolute;
+    left: 50%;
+    -webkit-transform:translateX(-50%);
+    transform:translateX(-50%);
+    max-width: 600px;
+    bottom: 400px;
+  }
+
+  .about-text h2,
+  .heading h2,
+  .newsletter h2{
+    font-size: 1.2rem;
+  }
+
+  .properties-container{
+    padding: 0;
+  }
+
+  .searchbox input{
+    width: 150px;
+  }
+}
+
+.button {
+  background-color: #18392b;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 376px){
+  .home-text h1{
+    font-size: 2.7rem;
+    position: absolute;
+    left: 50%;
+    -webkit-transform:translateX(-50%);
+    transform:translateX(-50%);
+    max-width: 600px;
+    bottom: 450px;
+  }
+}
+
+
+</style>
+</head>
+<body>
+<!-- Navbar -->
+<header>
+    <div class="nav-container">
+        <!-- Logo -->
+        <a href="https://ibb.co/wRzcYW6" class="logo"> <img src="https://i.ibb.co/c1rYxFT/Eco-Tech-transparent-background-logo.png" style="width: 170px; border-radius: 10px; z-index: 1; position: relative; "></a>
+        <!-- Menu Icon -->
+        <input type="checkbox" name="" id="menu">
+        <label for="menu" <i class='bx bx-menu' id="menu-icon"></i></label>
+        <!-- Nav List -->
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#properties">Founders</a></li>
+            <li><a href="#supportedby">Structure & Timeline</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+        <!-- Contact Button -->
+
+        <br> <a href="https://forms.gle/5YcJLu17dQe4oMUC6" class="btn"> Apply Now </a>
+    </div>
+</header>
+<!-- Home -->
+<section class="home container" id="home">
+    <div class="home-text">
+        <h1 style="font-size: 60px;">EcoTech<br>Research Exhibition<br>2023</h1>
+    </div>
+
+</section>
+<!-- About -->
+<section class="about container" id="about">
+
+    <div class="about-text">
+        <span>About us</span>
+        <div>
+
+  </span>
+        </div>
+        <h2>What is EcoTech?</h2>
+        <p>EcoTech is a 2-day research exhibition organized by the youth for the youth that will be held on 9-10th of September. <br>The first day of the event focuses on sustainability exhibits, whilst the second day focuses on technology-related projects.</p>
+
+        <h2>Why apply to EcoTech</h2>
+        <p>By applying to EcoTech, you will have the opportunity to become a part of this exhibition combining the worlds of Sustainability and technology. By connecting with a diverse group of individuals, participants will build a strong professional network, exchange ideas, and develop lifelong friendships.
+            <br>
+ <br>
+
+            EcoTech provides a valuable platform for participants to gain recognition for their work and ideas. Winning or even showcasing their ideas at the Baku EcoTech Research Exhibiton 2023 can lead to media coverage, awards, university scholarships, thereby boosting their profile and increasing their potential for future success in their academic careers.
+            <br>
+
+            <br>
+            Joining EcoTech provides an excellent platform for young minds to explore and develop innovative solutions that integrate technology and ecology. We hope this event encourages everyone to shift their perspective in how we look and ecology and technology.
+        </p>
+
+        <br>
+        <br>
+
+      <center>  <h2>For more information see our welcome booklet</h2><br></center>
+     <center>  <iframe src="https://drive.google.com/file/d/1P-aW9zRlC9N7W-GkTCgSGysUcbzNeghQ/preview" width="640" height="480" allow="autoplay"></iframe>
+</section>
+
+<!-- Properties -->
+<section class="properties container" id="properties">
+    <div class="heading">
+        <span>EcoTech</span>
+        <h2>EcoTech founders</h2>
+    </div>
+    <div class="properties-container container">
+        <!-- Box 1 -->
+        <div class="box" style="width: 270px;">
+            <a href="https://ibb.co/xhmc54x"><img src="https://i.ibb.co/7vgTy9s/aysu.jpg" style="width: 250px;" ></a>
+            <div class="content">
+                <div class="text">
+                    <h3>Aysu Sultanli</h3>
+                    <p>co-founder</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- Box 2 -->
+        <div class="box" style="width: 270px;">
+            <a href="https://ibb.co/xhmc54x"><img src="https://i.ibb.co/kS7qPF3/Screen-Shot-2023-08-07-at-12-35-21.png" style="width: 250px;" ></a>
+            <div class="content">
+                <div class="text">
+                    <h3>Tamilla Zeynalova</h3>
+                    <p>co-founder</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Properties -->
+<section class="properties container" id="properties">
+    <div class="heading">
+        <span>EcoTech</span>
+        <h2>Organizers</h2>
+    </div>
+    <div class="properties-container container">
+
+        <!-- Box 1 -->
+        <div class="box">
+            <a href="https://ibb.co/R29mqvd"><img src="https://i.ibb.co/s9MY9WF/Screen-Shot-2023-08-07-at-12-22-04.png"alt="Gulsum Jafarova"></a>
+            <div class="content">
+                <div class="text">
+                    <h3>Gulsum Jafarova</h3>
+                    <p>Head-Organizer</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Box 2 -->
+        <div class="box" >
+            <a href="https://ibb.co/v1dL2GQ"><img src="https://i.ibb.co/Mp4v4HM/Screen-Shot-2023-08-07-at-12-13-00.png" alt=" Yusuf Karimli " ></a>
+            <div class="content">
+                <div class="text">
+                    <h3>Yusuf Karimli</h3>
+                    <p>Designer</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Box 3 -->
+        <div class="box">
+            <a href="https://ibb.co/HCvFHxs"><img src="https://i.ibb.co/hf73zd8/Screen-Shot-2023-08-07-at-12-06-53.png" alt="Aisha Burziyeva" ></a>
+            <div class="content">
+                <div class="text">
+                    <h3>Aisha Burziyeva</h3>
+                    <p>HR Manager</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Box 4 -->
+
+
+        <!-- Box 5 -->
+        <div class="box">
+            <a href="https://ibb.co/KbbpNNN"><img src="https://i.ibb.co/jWHgwQ6/Screen-Shot-2023-08-07-at-12-09-40.png" alt="Seljan Karimli"></a>
+            <div class="content">
+                <div class="text">
+                    <h3>Seljan Karimli</h3>
+                    <p>Event coordinator</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Box 6 -->
+        <div class="box">
+            <a href="https://ibb.co/Z85NqRQ"><img src="https://i.ibb.co/tsg3Vw0/fidan.jpg" alt="Fidan Jafarova"></a>
+            <div class="content">
+                <div class="text">
+                    <h3>Fidan Jafarova</h3>
+                    <p>Financial Executive</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Box 7 -->
+        <div class="box">
+            <a href="https://ibb.co/KbbpNNN"><img src="https://i.ibb.co/7rQsd8J/Screen-Shot-2023-08-07-at-19-51-00.png" alt="Aysel Alizada"></a>
+            <div class="content">
+                <div class="text">
+                    <h3>Aysel Alizade</h3>
+                    <p>External Executive </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Box 8 -->
+        <div class="box">
+            <a href="https://ibb.co/FsygK93"><img src="https://i.ibb.co/SQMRP2y/ziyaddin.jpg"alt="Ziyaddin Musayev"></a>
+            <div class="content">
+                <div class="text">
+                    <h3>Ziyaddin Musayev</h3>
+                    <p>IT Executive</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Supported by: -->
+<section class="properties container" id="supportedby">
+    <div class="heading">
+        <h2>EcoTech Structure and participant timeline</h2>
+    </div>
+
+    <div class="properties-content contentt">
+        <div class="boxz">
+          <center>  <iframe src="https://drive.google.com/file/d/1NawQEfASAGrs1ZYwSOqi1VP7trC8bs-q/preview" width="840" height="680" allow="autoplay"></iframe> </center>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="heading">
+        <h2>What is the difference of group and individual application?</h2>
+    </div>
+
+
+
+    <div class="about-text">
+
+        <p>Group applications are considered for the participants who have established a group before applying to EcoTech and brainstormed a project idea for this exhibition together. It’s expected for all the group members’ names to be mentioned in the application form for them to get credit for their project. </p>
+     <br>
+        <br>
+
+        <center> <h1> All deadlines are 23:59 (GMT+4) on dates specified below </h1></center>
+    </div>
+
+
+
+    <section class="properties container" id="properties">
+
+        <div class="row">
+            <div class="left">
+                <a href="https://imgbb.com/"><img src="https://i.ibb.co/92D2g8p/logo111-removebg-preview.png"   ></a>
+
+                <p style="margin-left:35px; class="preFade fadeIn"> <b> August 13th, 2023 </b></p>
+
+            </div>
+            <div class="right">
+                <div class="content">
+                    <p>
+
+                        -> Last chance to apply individually  <br>
+                        <br>
+                        <a href="https://forms.gle/NweFhnVJNFjstWEF9" class="button"> -> Apply here </a>  <br><br>
+
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="sqs-block-content"><hr></div>
+        <br>
+        <br>
+        <br>
+
+
+
+        <div class="row">
+            <div class="left">
+                <a href="https://imgbb.com/"><img src="https://i.ibb.co/GCjKVDj/logo222-removebg-preview.png" height="300px;" width="40px; "></a>
+                <p style="margin-left:35px; class="preFade fadeIn"> <b> August 16th, 2023 </b></p>
+            </div>
+            <div class="right">
+                <div class="content">
+                    <p>
+                        -> Last chance to apply as a group <br>
+                    <br> <a href="https://forms.gle/5YcJLu17dQe4oMUC6" class="button"> -> Apply Here</a>
+                       <br>
+                        <br>
+                        -> Note: Take a look at the  <a href="https://drive.google.com/drive/folders/1Xb8Z-3w-MSeswSOnTgru7xY7cBTmAOpN?usp=sharing">Participant Resources</a> before applying!<br><br>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="sqs-block-content"><hr></div>
+        <br>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="left">
+                <a href="https://imgbb.com/"><img src="https://i.ibb.co/mJ3bb4R/logo3-removebg-preview.png"></a>
+                <p style="margin-left:35px; class="preFade fadeIn">  <b>   August 14th - 18th, 2023 </b> </p>
+            </div>
+            <div class="right">
+                <div class="content">
+                    <p>
+                        -> Recieve acceptance and rejection letters <br>
+                        -> Be assigned to your group's project mentor! <br><br>
+                        -> Our project mentors have been posted <a href="https://www.instagram.com/ecotechbaku/"> on our social media accounts!</a> <br><br>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="sqs-block-content"><hr></div>
+        <br>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="left">
+                <a href="https://imgbb.com/"><img src="https://i.ibb.co/jfJjFqr/logo4-removebg-preview.png"></a>
+                <p style="margin-left:35px; class="preFade fadeIn"> <b> August 19th-20th, 2023  </b></p>
+            </div>
+            <div class="right">
+                <div class="content">
+                    <p>
+                        -> Receive first formal feedback from your project mentors! <br><br>
+
+
+
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="sqs-block-content"><hr></div>
+        <br>
+
+
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="left">
+                <a href="https://imgbb.com/"><img src="https://i.ibb.co/sQykPVC/Screen-Shot-2023-08-03-at-23-00-47.png" style= "width:200px; height:200px; "></a>
+                <p style="margin-left:30px; class="preFade fadeIn"> <b>  August 26th - 27th, 2023 </p> </b>
+            </div>
+            <div class="right">
+                <div class="content">
+                    <p>
+                        -> Receive final feedback on your research proposal from your project mentors! <br><br>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="sqs-block-content"><hr></div>
+        <br>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="left">
+                <a href="https://imgbb.com/"><img src="https://i.ibb.co/0Z2bW1H/logo5-removebg-preview.png"></a>
+                <p style="margin-left:30px; class="preFade fadeIn"> <b> September 9th -10th, 2023 </p> </b>
+            </div>
+            <div class="right">
+                <div class="content">
+                    <p>
+                        -> Be ready to present your research projects! <br></br>
+                        -> If you have any further questions, don't hesitate to contact us :
+
+                        <br>
+
+                        <a href="mailto:ecotechbaku@gmail.com">ecotechbaku@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="sqs-block-content"><hr></div>
+        <br>
+    </section>
+    <CENTER> <h2> Supported by: </h2></CENTER>
+    <center>
+    <br>
+    <br>
+    <div class="row">
+        <div class="left">
+            <center>
+            <a href="https://imgbb.com/">  <img src="https://i.ibb.co/P9sY8Nc/Screen-Shot-2023-08-03-at-22-40-46.png" alt="Supporting organisations of EcoTech" ></a>
+            <a href="https://imgbb.com/">  <img src="https://i.ibb.co/5hzQfM7/Untitled-1.png" alt="Supporting organisations of EcoTech" ></a>
+
+
+        </div>
+<br>
+        <br>
+        <br>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</logos>
+ <br>
+    <br>
+
+
+</section>
+<logos>
+
+
+
+
+    <!-- Footer -->
+    <section class="footer" id="footer">
+        <div class="footer-container container">
+            <h2>EcoTech</h2>
+
+            <div class="footer-box">
+                <h3>Event location</h3>
+                <a href="https://goo.gl/maps/4gQNKGm5ojBmhFhg9">Landmark Hotel, Rotunda Hall </a>
+
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <a href="#">+994 (50) 222 240 79</a>
+                <a href="mailto:ecotechbaku@gmail.com">Gmail</a>
+                <div class="social">
+                    <a href="https://www.instagram.com/ecotechbaku/"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="copyright">
+        <p style="font-size: 10px;">Coded by: Ziyaddin Musayev and Aysu Sultanli</p>
+        <p style="font-size: 15px;">&#169; CorpoolVenom All Right Reserved</p>
+    </div>
+</body>
+
+
+</html>
+
